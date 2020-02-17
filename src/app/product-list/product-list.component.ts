@@ -9,6 +9,7 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = products;
+  
 
   share() {
     window.alert('The product has been shared!');
@@ -16,6 +17,12 @@ export class ProductListComponent {
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
+  AddToCart(productId){
+    window.alert('Successfully added to the cart.Please Checkout');
+   /* products[productId].instock.value = 0; */
+    
+  }
+
 }
 
 
